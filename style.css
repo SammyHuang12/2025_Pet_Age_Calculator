@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    font-family: "Microsoft JhengHei", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://hackmd.io/_uploads/Hyc4usZlWe.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 420px;
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    margin-bottom: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+label {
+    font-size: 1.1em;
+    color: #333;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid #ffccda;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #ff99bb;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #ff7aa2;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+.hidden {
+    display: none;
+}
+
+/* RWD */
+@media (max-width: 480px) {
+    .card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+}
